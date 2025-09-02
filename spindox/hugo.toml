@@ -1,0 +1,26 @@
+baseURL = 'https://spindox.yoyoclub.info/'
+languageCode = 'en-us'
+title = 'Spindox'
+theme = 'lynx'
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[params.author]
+  #name = "Spindox"
+  image = "spindox.jpg"
+  #headline = 'Spin Doctors Yo-Yo Club A.K.A "Spindox" is a yo-yo club in the Bay Area which currently meets up every 4th Saturday of the month in San Mateo, CA.'
+  calendarLink = "https://calendar.google.com/calendar/embed?src=spindoxyoyo%40gmail.com&ctz=America%2FLos_Angeles"
+  links = [
+    { instagram = { href = "https://instagram.com/spindoxyoyo" } },
+    { facebook = { href = "https://www.facebook.com/groups/spindoctorsyoyoclub/" } },
+    { gcal = { href = "https://calendar.google.com/calendar/embed?src=spindoxyoyo%40gmail.com&ctz=America%2FLos_Angeles", text = "Calendar", icon = "google"}},
+    { wiki = { href = "https://yoyo.fandom.com/wiki/Spin_Doctors_Yo-Yo_Club", text = "Yo-Yo Wiki", icon = "link"}}
+  ]
+
+[markup.highlight]
+  noClasses = false
