@@ -1,0 +1,28 @@
+baseURL = 'https://bayarea.yoyoclub.info/'
+languageCode = 'en-us'
+title = 'Bay Area Yo-Yo'
+theme = 'lynx'
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[params.author]
+  #name = "Bay Area"
+  image = "golden-gate.jpg"
+  headline = 'Meta list of yo-yo clubs in Bay Area + miscellaneous non-club events.'
+  calendarLink = "https://calendar.google.com/calendar/embed?src=bayareayoyoclub%40gmail.com&ctz=America%2FLos_Angeles"
+  extraCalendarSources = [
+    "spindoxyoyo%40gmail.com"
+  ]
+  links = [
+    { spindox = { href = "https://spindox.yoyoclub.info", text = "Spindox (Peninsula)", icon = "link" } },
+    { eastbay = { href = "#", text = "East Bay Yo-Yo Club", icon = "link"}},
+    { sf = { href = "#", text = "SF Yo-Yo Club", icon = "link"}},
+  ]
+
+[markup.highlight]
+  noClasses = false

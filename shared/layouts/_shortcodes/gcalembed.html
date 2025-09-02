@@ -1,0 +1,10 @@
+
+{{- $calendarUrl := .Site.Params.Author.calendarLink }}
+{{- $extraSources := .Site.Params.Author.extraCalendarSources }}
+{{ with $extraSources }}
+  {{ if gt (len . ) 0 }}
+      <iframe src={{ print $calendarUrl "&wkst=1&height=600&showPrint=0&mode=AGENDA&title&color=%23039be5&src=" (delimit . "&src=")}} style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  {{ else }}
+    <iframe src="{{ $calendarUrl }}&wkst=1&height=600&showPrint=0&mode=AGENDA&title&color=%23039be5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  {{ end }}
+{{ end }}
