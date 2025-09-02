@@ -8,6 +8,6 @@ The embedded iframe below won't expand to the full screen size of the device if 
 <details class="mb-4" >
     <summary class="cursor-pointer text-lg font-semibold mb-2 dark:text-white">Calendar (click to expand)</summary>
     <div class="responsive-iframe-container">
-      <iframe src="{{< param Author.calendarLink >}}&wkst=1&height=600&showPrint=0&mode=AGENDA&title&color=%23039be5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    {{< gcalembed >}}
     </div>
 </details>
