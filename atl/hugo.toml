@@ -1,0 +1,25 @@
+baseURL = 'https://atl.yoyoclub.info/'
+languageCode = 'en-us'
+title = 'Atlanta Yo-Yo Club'
+theme = 'lynx'
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[params.author]
+  name = "Atlanta Yo-Yo Club"
+  image = "atl-yoyo-mockup.png"
+  calendarLink = "https://calendar.google.com/calendar/embed?src=atlyoyoclub%40gmail.com&ctz=America%2FNew_York"
+  links = [
+    { instagram = { href = "https://instagram.com/atlyoyoclub" } },
+    { facebook = { href = "https://facebook.com/atlyoyoclub" } },
+    { discord = "https://discord.gg/BvaMcFKkhe" },
+    { gcal = { href = "https://calendar.google.com/calendar/embed?src=atlyoyoclub%40gmail.com&ctz=America%2FNew_York", text = "Calendar", icon = "google" }}
+  ]
+
+[markup.highlight]
+  noClasses = false
