@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params.author]
   #name = "Spindox"
-  image = "spindox.jpg"
+  image = "profile.jpg"
   #headline = 'Spin Doctors Yo-Yo Club A.K.A "Spindox" is a yo-yo club in the Bay Area which currently meets up every 4th Saturday of the month in San Mateo, CA.'
   calendarLink = "https://calendar.google.com/calendar/embed?src=spindoxyoyo%40gmail.com&ctz=America%2FLos_Angeles"
   links = [

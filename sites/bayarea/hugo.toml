@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params.author]
   #name = "Bay Area"
-  image = "golden-gate.jpg"
+  image = "profile.jpg"
   headline = 'Meta list of yo-yo clubs in Bay Area + miscellaneous non-club events.'
   calendarLink = "https://calendar.google.com/calendar/embed?src=bayareayoyoclub%40gmail.com&ctz=America%2FLos_Angeles"
   extraCalendarSources = [

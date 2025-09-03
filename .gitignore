@@ -4,3 +4,4 @@
 **/resources/_gen/
 backup
 sites/meta/hugo.toml
+sites/meta/assets/*.jpg
