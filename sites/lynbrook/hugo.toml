@@ -1,0 +1,23 @@
+baseURL = 'https://lynbrook.yoyoclub.info/'
+languageCode = 'en-us'
+title = 'Lynbrook Yo-Yo Club'
+theme = 'lynx'
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[params.author]
+  name = "Lynbrook Yo-Yo Club"
+  image = "profile.jpg"
+  headline = 'Learning and playing with yoyos. 2nd Saturday of the month @3pm'
+  calendarLink = "TBD"
+  links = [
+    { instagram = { href = "https://instagram.com/lynbrookyoyoclub" } },
+  ]
+
+[markup.highlight]
+  noClasses = false
