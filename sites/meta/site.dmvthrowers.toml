@@ -1,0 +1,25 @@
+baseURL = 'https://dmvthrowers.yoyoclub.info/'
+languageCode = 'en-us'
+title = 'DMVThrowers'
+theme = 'lynx'
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[params.author]
+  name = "DMVThrowers"
+  image = "dmvthrowers.jpg"
+  headline = 'D.C., Maryland, and Virginia Yo-Yo and skill toy club. Open to all ages and skills.'
+  calendarLink = "https://calendar.google.com/calendar/u/0/embed?src=252ea2a2616e6b230e57fd6f0710a15a06231bf6f0d2c306ea7f32b6a7fed328@group.calendar.google.com&ctz=America/New_York"
+  links = [
+    { instagram = { href = "https://instagram.com/dmv_throwers" } },
+    { facebook_page = { href = "https://facebook.com/DMVThrowers", text = "Page", icon = "facebook" } },
+    { facebook_group = { href = "https://www.facebook.com/share/g/178r73P3ax/?mibextid=wwXIfr", text = "Group", icon = "facebook" } },
+  ]
+
+[markup.highlight]
+  noClasses = false
