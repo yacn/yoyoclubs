@@ -1,5 +1,5 @@
 %: clean %/hugo.toml
-	cp -rs $(@)/* ./meta/
+	cp -rs $(CURDIR)/$(@)/* ./meta/
 	cd ./meta && hugo --gc --minify
 
 clean:
