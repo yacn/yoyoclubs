@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params.author]
   name = "DMVThrowers"
-  image = "dmvthrowers.jpg"
+  image = "profile.jpg"
   headline = 'D.C., Maryland, and Virginia Yo-Yo and skill toy club. Open to all ages and skills.'
   calendarLink = "https://calendar.google.com/calendar/u/0/embed?src=252ea2a2616e6b230e57fd6f0710a15a06231bf6f0d2c306ea7f32b6a7fed328@group.calendar.google.com&ctz=America/New_York"
   links = [

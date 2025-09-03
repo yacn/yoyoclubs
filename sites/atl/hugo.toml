@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params.author]
   name = "Atlanta Yo-Yo Club"
-  image = "atl-yoyo-mockup.png"
+  image = "profile.jpg"
   calendarLink = "https://calendar.google.com/calendar/embed?src=atlyoyoclub%40gmail.com&ctz=America%2FNew_York"
   links = [
     { instagram = { href = "https://instagram.com/atlyoyoclub" } },
