@@ -1,7 +1,7 @@
 %: clean %/hugo.toml
-	cp -rs $(CURDIR)/$(@)/* ./meta/
+	cp -rl $(CURDIR)/$(@)/* ./meta/
 	cd ./meta && hugo --gc --minify
 
 clean:
 	find meta -type d -name public -exec rm -vr {} + -depth
-	find meta -type l -not -path "meta/themes/*" -exec rm -v {} +
+	find meta -type f -links +1 -exec rm -v {} +
