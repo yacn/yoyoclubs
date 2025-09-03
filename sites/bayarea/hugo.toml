@@ -16,7 +16,9 @@ disableKinds = ["taxonomy", "term"]
   headline = 'Meta list of yo-yo clubs in Bay Area + miscellaneous non-club events.'
   calendarLink = "https://calendar.google.com/calendar/embed?src=bayareayoyoclub%40gmail.com&ctz=America%2FLos_Angeles"
   extraCalendarSources = [
-    "spindoxyoyo%40gmail.com"
+    "spindoxyoyo%40gmail.com",
+    "sfyoyoclub%40gmail.com",
+    "eastbayyoyo%40gmail.com",
   ]
   links = [
     { spindox = { href = "https://spindox.yoyoclub.info", text = "Spindox (Peninsula)", icon = "link" } },
