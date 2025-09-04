@@ -1,0 +1,27 @@
+baseURL = 'https://sf.yoyoclub.info/'
+languageCode = 'en-us'
+title = 'SF Yo-Yo Club'
+theme = 'lynx'
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[params.author]
+  name = "SF Yo-Yo Club"
+  image = "profile.jpg"
+  headline = ''
+  calendarLink = "https://calendar.google.com/calendar/embed?src=sfyoyoclub%40gmail.com&ctz=America%2FLos_Angeles"
+#  links = [
+#    { a_link = { href = "https://example.com", text = "Example", icon = "link" } },
+#    { instagram = { href = "https://instagram.com/{{ instagram }}" } },
+#    { facebook = { href = "https://facebook.com/{{ facebook }}" } },
+#    { discord = "{{ discord }}" },
+#    { gcal = { href = "{{ calendarLink }}", text = "Calendar", icon = "google" }}
+#  ]
+
+[markup.highlight]
+  noClasses = false
