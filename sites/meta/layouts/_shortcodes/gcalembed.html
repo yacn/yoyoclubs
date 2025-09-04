@@ -1,24 +1,24 @@
-{{- if isset .Site.Params.Author "calendarlink" }}
-    {{- $calendarLink := or (.Site.Params.Author.calendarLink) ""}}
-    {{- if hasPrefix $calendarLink "https://calendar.google" }}
-        <span style="display: inline-block; visibility: hidden; height: 0; overflow: hidden">
-        The embedded iframe below won't expand to the full screen size of the device if there isn't any other content, so this is a long string to make sure there is plenty of width for the iframe to expand to on users devices.
-        </span>
-        {{- $calendarUrl := print .Site.Params.Author.calendarLink "&wkst=1&height=600&showPrint=0&mode=AGENDA&title&color=%23039be5" }}
-        {{- .Store.Set "calendarUrl" $calendarUrl }}
-        {{- if isset .Site.Params.Author "extracalendarsources" }}
-            {{- $extraSources := .Site.Params.Author.extraCalendarSources }}
-            {{- if gt (len $extraSources) 0 }}
-                {{- $calendarUrl := print $calendarUrl "&src=" (delimit $extraSources "&src=") }}
-                {{- .Store.Set "calendarUrl" $calendarUrl }}
-            {{- end }}
+{{- $calendarLink := or (.Site.Params.Author.calendarLink) ""}}
+{{- if hasPrefix $calendarLink "https://calendar.google" }}
+    <span style="display: inline-block; visibility: hidden; height: 0; overflow: hidden">
+    The embedded iframe below won't expand to the full screen size of the device if there isn't any other content, so this is a long string to make sure there is plenty of width for the iframe to expand to on users devices.
+    </span>
+    {{- $calendarUrl := print .Site.Params.Author.calendarLink "&wkst=1&height=600&showPrint=0&mode=AGENDA&title&color=%23039be5" }}
+    {{- site.Store.Set "calendarUrl" $calendarUrl }}
+    {{- if isset .Site.Params.Author "extracalsources" }}
+        {{- $extraSources := .Site.Params.Author.extraCalSources }}
+        {{- range $index, $src := $extraSources }}
+            {{- $calUrl := site.Store.Get "calendarUrl" }}
+            {{- $qs := collections.Querify (dict "src" $src.id "color" $src.color )}}
+            {{- $calUrl := print $calUrl "&" $qs }}
+            {{- site.Store.Set "calendarUrl" $calUrl }}
         {{- end }}
-        {{- $calendarUrl := .Store.Get "calendarUrl" }}
-        <details class="mb-4" >
-            <summary class="cursor-pointer text-lg font-semibold mb-2 dark:text-white">View upcoming events on the calendar (click to expand)</summary>
-            <div class="responsive-iframe-container">
-                <iframe src="{{ $calendarUrl }}" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </details>
     {{- end }}
+    {{- $calendarUrl := site.Store.Get "calendarUrl" }}
+    <details class="mb-4" >
+        <summary class="cursor-pointer text-lg font-semibold mb-2 dark:text-white">View upcoming events on the calendar (click to expand)</summary>
+        <div class="responsive-iframe-container">
+            <iframe src="{{ $calendarUrl }}" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </details>
 {{- end }}
