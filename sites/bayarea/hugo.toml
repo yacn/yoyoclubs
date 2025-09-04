@@ -15,10 +15,10 @@ disableKinds = ["taxonomy", "term"]
   image = "profile.jpg"
   headline = 'Meta list of yo-yo clubs in Bay Area + miscellaneous non-club events.'
   calendarLink = "https://calendar.google.com/calendar/embed?src=bayareayoyoclub%40gmail.com&ctz=America%2FLos_Angeles"
-  extraCalendarSources = [
-    "spindoxyoyo%40gmail.com",
-    "sfyoyoclub%40gmail.com",
-    "eastbayyoyo%40gmail.com",
+  extraCalSources = [
+    { id = "spindoxyoyo@gmail.com", color = "#9e69af" },
+    { id = "sfyoyoclub@gmail.com", color = "#f76024" }, # sf giants orange hex code
+    { id = "eastbayyoyo@gmail.com", color = "#003831" }, # oakland a's green hex code
   ]
   links = [
     { spindox = { href = "https://spindox.yoyoclub.info", text = "Spindox (Peninsula)", icon = "link" } },
