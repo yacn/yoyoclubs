@@ -15,10 +15,18 @@
         {{- end }}
     {{- end }}
     {{- $calendarUrl := site.Store.Get "calendarUrl" }}
-    <details class="mb-4" >
-        <summary class="cursor-pointer text-lg font-semibold mb-2 dark:text-white">View upcoming events on the calendar (click to expand)</summary>
-        <div class="responsive-iframe-container">
-            <iframe src="{{ $calendarUrl }}" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-    </details>
+    {{- if isset .Site.Params.Author "links" }}
+        {{- if gt (len .Site.Params.Author.links) 0 }}
+            <details class="mb-4" >
+                <summary class="cursor-pointer text-lg font-semibold mb-2 dark:text-white">View upcoming events on the calendar (click to expand/collapse)</summary>
+                <div class="responsive-iframe-container">
+                    <iframe src="{{ $calendarUrl }}" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </details>
+        {{- else }}
+            <div class="responsive-iframe-container">
+                <iframe src="{{ $calendarUrl }}" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        {{- end }}
+    {{- end }}
 {{- end }}
