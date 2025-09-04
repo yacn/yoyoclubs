@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params.author]
   #name = "Bay Area"
-  image = "profile.jpg"
+  image = "profile.webp"
   headline = 'Meta list of yo-yo clubs in Bay Area + miscellaneous non-club events.'
   calendarLink = "https://calendar.google.com/calendar/embed?src=bayareayoyoclub%40gmail.com&ctz=America%2FLos_Angeles"
   extraCalSources = [
@@ -23,7 +23,7 @@ disableKinds = ["taxonomy", "term"]
   links = [
     { spindox = { href = "https://spindox.yoyoclub.info", text = "Spindox (Peninsula)", icon = "link" } },
     { eastbay = { href = "#", text = "East Bay Yo-Yo Club", icon = "link"}},
-    { sf = { href = "#", text = "SF Yo-Yo Club", icon = "link"}},
+    { sf = { href = "https://sf.yoyoclub.info", text = "SF Yo-Yo Club", icon = "link"}},
   ]
 
 [markup.highlight]
