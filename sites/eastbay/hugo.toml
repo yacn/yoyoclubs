@@ -1,0 +1,27 @@
+baseURL = 'https://eastbay.yoyoclub.info/'
+languageCode = 'en-us'
+title = 'East Bay Yo-Yo Club'
+theme = 'lynx'
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[params.author]
+  name = "East Bay Yo-Yo Club"
+  image = "profile.jpg"
+  headline = 'Yo-yo club meetings in the East Bay Area, CA'
+  calendarLink = "https://calendar.google.com/calendar/embed?src=eastbayyoyo%40gmail.com&ctz=America%2FLos_Angeles"
+  #extraCalendarSources = ["{{extraCalendarSources}}"]
+  links = [
+    { instagram = { href = "https://instagram.com/eastbayyoyoclub" } },
+#    { facebook = { href = "https://facebook.com/{{ facebook }}" } },
+#    { discord = "{{ discord }}" },
+#    { gcal = { href = "{{ calendarLink }}", text = "Calendar", icon = "google" }}
+  ]
+
+[markup.highlight]
+  noClasses = false
