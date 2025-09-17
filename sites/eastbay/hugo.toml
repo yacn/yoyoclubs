@@ -18,6 +18,7 @@ disableKinds = ["taxonomy", "term"]
   #extraCalendarSources = ["{{extraCalendarSources}}"]
   links = [
     { instagram = { href = "https://instagram.com/eastbayyoyoclub" } },
+    { bayarea = { href = "https://bayarea.yoyoclub.info", text = "Bay Area Yo-Yo Clubs", icon = "link" } },
 #    { facebook = { href = "https://facebook.com/{{ facebook }}" } },
 #    { discord = "{{ discord }}" },
 #    { gcal = { href = "{{ calendarLink }}", text = "Calendar", icon = "google" }}
