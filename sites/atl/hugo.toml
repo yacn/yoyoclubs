@@ -15,9 +15,9 @@ disableKinds = ["taxonomy", "term"]
   image = "profile.png"
   calendarLink = "https://calendar.google.com/calendar/embed?src=atlyoyoclub%40gmail.com&ctz=America%2FNew_York"
   links = [
-    { instagram = { href = "https://instagram.com/atlyoyoclub" } },
-    { facebook = { href = "https://facebook.com/atlyoyoclub" } },
-    { discord = "https://discord.gg/BvaMcFKkhe" },
+    { instagram = { href = "https://instagram.com/metroatlyoyo" } },
+    #{ facebook = { href = "https://facebook.com/atlyoyoclub" } },
+    { discord = "https://discord.gg/EZNEn6bZxe" },
     { gcal = { href = "https://calendar.google.com/calendar/embed?src=atlyoyoclub%40gmail.com&ctz=America%2FNew_York", text = "Calendar", icon = "google" }}
   ]
 
