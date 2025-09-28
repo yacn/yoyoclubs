@@ -2,6 +2,7 @@ baseURL = 'https://lynbrook.yoyoclub.info/'
 languageCode = 'en-us'
 title = 'Lynbrook Yo-Yo Club'
 theme = 'lynx'
+params.description = 'Learning and playing with yoyos. 2nd Saturday of the month @3pm'
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
