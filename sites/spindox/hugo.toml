@@ -16,6 +16,11 @@ disableKinds = ["taxonomy", "term"]
   image = "profile.jpg"
   #headline = 'Spin Doctors Yo-Yo Club a.k.a "Spindox" is a yo-yo club in the Bay Area which currently meets up every 4th Saturday of the month in San Mateo, CA.'
   calendarLink = "https://calendar.google.com/calendar/embed?src=spindoxyoyo%40gmail.com&ctz=America%2FLos_Angeles"
+  extraCalSources = [
+    { id = "sfyoyoclub@gmail.com", color = "#f76024" }, # sf giants orange hex code
+    { id = "bayareayoyoclub@gmail.com", color = "#B78727" }, # 49ers gold hex code
+    { id = "eastbayyoyo@gmail.com", color = "#003831" }, # oakland a's green hex code
+  ]
   links = [
     { instagram = { href = "https://instagram.com/spindoxyoyo" } },
     { facebook = { href = "https://www.facebook.com/groups/spindoctorsyoyoclub/" } },
