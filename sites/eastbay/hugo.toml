@@ -17,6 +17,11 @@ disableKinds = ["taxonomy", "term"]
   headline = 'Yo-yo club meetings in the East Bay Area, CA'
   calendarLink = "https://calendar.google.com/calendar/embed?src=eastbayyoyo%40gmail.com&ctz=America%2FLos_Angeles"
   #extraCalendarSources = ["{{extraCalendarSources}}"]
+  extraCalSources = [
+    { id = "spindoxyoyo@gmail.com", color = "#9e69af" },
+    { id = "sfyoyoclub@gmail.com", color = "#f76024" }, # sf giants orange hex code
+    { id = "bayareayoyoclub@gmail.com", color = "#B78727" }, # 49ers gold hex code
+  ]
   links = [
     { instagram = { href = "https://instagram.com/eastbayyoyoclub" } },
     { bayarea = { href = "https://bayarea.yoyoclub.info", text = "Bay Area Yo-Yo Clubs", icon = "link" } },
