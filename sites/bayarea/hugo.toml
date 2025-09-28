@@ -2,6 +2,7 @@ baseURL = 'https://bayarea.yoyoclub.info/'
 languageCode = 'en-us'
 title = 'Bay Area Yo-Yo'
 theme = 'lynx'
+params.description = 'Meta list of yo-yo clubs in Bay Area + miscellaneous non-club events.'
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]

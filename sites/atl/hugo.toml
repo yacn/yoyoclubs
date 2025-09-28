@@ -2,6 +2,7 @@ baseURL = 'https://atl.yoyoclub.info/'
 languageCode = 'en-us'
 title = 'Atlanta Yo-Yo Club'
 theme = 'lynx'
+params.description = 'Yo-yo club meetings and events in the Atlanta Metropolitan area'
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]

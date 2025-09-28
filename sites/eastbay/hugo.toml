@@ -2,6 +2,7 @@ baseURL = 'https://eastbay.yoyoclub.info/'
 languageCode = 'en-us'
 title = 'East Bay Yo-Yo Club'
 theme = 'lynx'
+params.description = 'Yo-yo club meetings in the East Bay Area, CA'
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]

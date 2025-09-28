@@ -2,6 +2,7 @@ baseURL = 'https://sf.yoyoclub.info/'
 languageCode = 'en-us'
 title = 'SF Yo-Yo Club'
 theme = 'lynx'
+params.description = 'Yo-yo club meetings and events in San Francisco'
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
