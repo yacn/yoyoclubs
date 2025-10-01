@@ -2,6 +2,7 @@ baseURL = 'https://{{ clubShortName }}.yoyoclub.info/'
 languageCode = 'en-us'
 title = '{{ clubName }}'
 theme = 'lynx'
+params.description = '{{ clubHeadline }}'
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
