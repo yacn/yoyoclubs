@@ -1,0 +1,29 @@
+baseURL = 'https://cinci.yoyoclub.info/'
+languageCode = 'en-us'
+title = 'Cinci Yoyo Club'
+theme = 'lynx'
+params.description = 'Yoyo club in the Cincinnati area'
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[params.author]
+  name = "Cinci Yoyo Club"
+  image = "profile.jpg"
+  headline = 'Yoyo club in the Cincinnati area'
+  #calendarLink = "{{ calendarLink }}"
+  #extraCalendarSources = ["{{extraCalendarSources}}"]
+  links = [
+    { instagram = { href = "https://www.instagram.com/cinciyoyoclub" } },
+    { facebook = { href = "https://www.facebook.com/groups/1783533042063397/" } },
+    { discord = "https://discord.gg/E8PVzt9ngG" },
+    #{ a_link = { href = "https://example.com", text = "Example", icon = "link" } },
+    #{ gcal = { href = "{{ calendarLink }}", text = "Calendar", icon = "google" }}
+  ]
+
+[markup.highlight]
+  noClasses = false
