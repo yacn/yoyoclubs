@@ -2,7 +2,7 @@ baseURL = 'https://cinci.yoyoclub.info/'
 languageCode = 'en-us'
 title = 'Cinci Yoyo Club'
 theme = 'lynx'
-params.description = 'Yoyo club in the Cincinnati area'
+params.description = 'Cinci Yoyo Club welcomes throwers of all skill levels from the Tri-state area'
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
@@ -14,7 +14,7 @@ disableKinds = ["taxonomy", "term"]
 [params.author]
   name = "Cinci Yoyo Club"
   image = "profile.jpg"
-  headline = 'Yoyo club in the Cincinnati area'
+  headline = 'Cinci Yoyo Club welcomes throwers of all skill levels from the Tri-state area'
   calendarLink = "https://calendar.google.com/calendar/embed?src=21e626c4b66ee433386c81ab29682188f8d158a42f4858667dcc449a55a9ac31%40group.calendar.google.com&ctz=America%2FNew_York"
   #extraCalendarSources = ["{{extraCalendarSources}}"]
   links = [
