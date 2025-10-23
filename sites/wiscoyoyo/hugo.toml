@@ -1,0 +1,27 @@
+baseURL = 'https://wiscoyoyo.yoyoclub.info/'
+languageCode = 'en-us'
+title = 'Wisconsin Yo-Yo and Skill Toy Club'
+theme = 'lynx'
+params.description = 'Based out of Madison! Open to all ages and skill levels.'
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[params.author]
+  name = "Wisconsin Yo-Yo and Skill Toy Club"
+  image = "profile.jpg"
+  headline = 'Based out of Madison! Open to all ages and skill levels.'
+  calendarLink = "https://calendar.google.com/calendar/embed?src=wiscoyoyo%40gmail.com&ctz=America%2FChicago"
+  #extraCalendarSources = ["{{extraCalendarSources}}"]
+  links = [
+    { instagram = { href = "https://www.instagram.com/wiscoyoyo/" } },
+    { discord = "https://discord.gg/urD7vWSPpw" },
+    #{ gcal = { href = "{{ calendarLink }}", text = "Calendar", icon = "google" }}
+  ]
+
+[markup.highlight]
+  noClasses = false
