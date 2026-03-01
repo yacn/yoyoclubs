@@ -23,6 +23,9 @@ disableKinds = ["taxonomy", "term"]
     { id = "bayareayoyoclub@gmail.com", color = "#B78727" }, # 49ers gold hex code
   ]
   links = [
+    { mailing_list = { href = "https://forms.gle/UhinAcYGGAZsEsGa8", text = "Mailing List", icon = "email"}},
+    #{ mailing_list = { href = "https://forms.gle/UhinAcYGGAZsEsGa8", text = "📧 Mailing List", icon = "none"}},
+    #{ mailing_list = { href = "https://forms.gle/UhinAcYGGAZsEsGa8", text = "📧 Mailing List", icon = "email"}},
     { instagram = { href = "https://instagram.com/eastbayyoyoclub" } },
     { bayarea = { href = "https://bayarea.yoyoclub.info", text = "Bay Area Yo-Yo Clubs", icon = "link" } },
 #    { facebook = { href = "https://facebook.com/{{ facebook }}" } },
